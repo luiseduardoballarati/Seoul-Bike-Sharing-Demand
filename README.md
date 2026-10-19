@@ -66,21 +66,6 @@ Baseline: a model that always predicts the average (729 bikes) has an R² of 0.
 - `Month` is used as a number, so December (12) and January (1) look far apart.
 - The data covers one city and one year.
 
-## Suggested next steps
-
-**Fixes first**
-1. Restart and run all cells, so the Seasons fix (`drop_first=True`) reaches every model.
-2. Fix the "RMSE test" lines in the temperature² and temperature³ cells (they currently print the train RMSE).
-3. Test temperature² and temperature³ together in the full model.
-4. Update the notes so they match the new outputs, and remove leftover cells.
-
-**Improve the model**
-
-5. Add a weekend flag combined with the hour, so weekdays and weekends can have different daily patterns.
-6. Try tree models (Random Forest, XGBoost), which find curves and interactions on their own.
-7. Check for negative predictions, and try predicting the log of the target.
-8. Test on whole days the model hasn't seen, instead of random hours.
-9. Try the model with and without `Month`, since Seasons already covers the time of year.
 
 ## How to run
 
